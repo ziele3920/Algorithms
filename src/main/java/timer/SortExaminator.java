@@ -4,6 +4,8 @@ import listimpl.ArrayList2x;
 import listimpl.IList;
 import listimpl.ListUtilities;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class SortExaminator {
@@ -16,6 +18,7 @@ public class SortExaminator {
         int[] elementsCount = new int[] {100, 1000, 5000};
         long[] results = new long[elementsCount.length];
         int repetitions = 100;
+        List<Integer> l = new ArrayList<>(List.of(1, 2, 3, 4));
 
         for(int i = 0; i < elementsCount.length; i++) {
             for(int repetition = 0; repetition < repetitions; repetition++) {

@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class ListMain {
     public static void main(String[] args) {
+
         // IList<Integer> list = new ArrayList1<>(); // w zależności obiekt, której klasy chcemy implementować
         IList<Integer> list = new LinkedList<>();
         Random rand=new Random();
@@ -12,7 +13,7 @@ public class ListMain {
             list.add(rand.nextInt(20));
         }
         ListUtilities.display(list);
-        list.set(19, 3);
+        ListUtilities.insertSort(list);
         ListUtilities.display(list);
     }
 }

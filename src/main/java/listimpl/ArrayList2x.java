@@ -91,6 +91,15 @@ public class ArrayList2x<T> implements IList<T> {
             tmp[i-1]=array[i];
         }
         array=tmp;
-        size++;
+        size--;
+    }
+
+    @Override
+    public void swap(int index1, int index2) {
+        checkGetBounds(index1);
+        checkGetBounds(index2);
+        T tmp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = tmp;
     }
 }

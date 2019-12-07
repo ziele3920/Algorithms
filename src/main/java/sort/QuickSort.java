@@ -2,7 +2,7 @@ package sort;
 
 public class QuickSort {
     public void sort(int[] t, int fi, int li) {
-        if(li < 1 || li == fi) return;
+        if(li < 1 || li <= fi) return;
         int swapIndex = fi;
         int pivot = t[li];
         for(int i = fi; i <= li; i++) {
